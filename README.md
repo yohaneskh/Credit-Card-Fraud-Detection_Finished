@@ -90,3 +90,15 @@ c. ROC-AUC and PR-AUC.
 8. Conclusion.
 
 The final model achieved strong performance and balanced metrics, especially in identifying fraudulent transactions from a heavily imbalanced dataset. Optuna improved the model's ability to detect fraud while minimizing false positives.
+
+### E. Environment
+
+This notebook was developed and tested on **Kaggle Notebook**, for environments where dependencies are not pre-installed, use the optional `!pip install` commands mentioned on point D.
+
+## AUTHOR
+
+**Yohanes Kurniawan Hertanto**
+
+An aspiring Data Analyst with interest in Machine Learning
+
+https://www.kaggle.com/yohaneskhyekaha
