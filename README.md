@@ -45,4 +45,48 @@ d. !pip install imbalanced-learn
 
 - Load CSV, check for missing values, outliers, imbalance.
 
-3. 
+3. Data cleaning & preprocessing.
+
+- Handle duplicated rows selectively from legitimate transactions only.
+
+- Standardize `Amount` and `Time` variables.
+
+- Apply `SMOTE` to address imbalance on TRAIN SET.
+
+4. Model training.
+
+- Train models using:
+
+- RandomForest + SMOTE (baseline model).
+
+- RandomForest + SMOTE + Optuna.
+
+- XGBoost + SMOTE.
+
+- XGBoost + SMOTE + Optuna.
+
+5. Model evaluation.
+
+Evaluate each model using:
+
+a. Confusion Matrix.
+
+b. Precision, Recall, and F1.
+
+c. ROC-AUC and PR-AUC.
+
+6. Model comparison & selection.
+
+- Use grouped bar charts and summary metrics to compare.
+
+- Final model: `XGB + SMOTE + Optuna`.
+
+7. Model saving and inference.
+
+- Save model with joblib.
+
+- Run predictions on a synthetic random dataset.
+
+8. Conclusion.
+
+The final model achieved strong performance and balanced metrics, especially in identifying fraudulent transactions from a heavily imbalanced dataset. Optuna improved the model's ability to detect fraud while minimizing false positives.
