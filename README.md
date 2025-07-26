@@ -2,8 +2,12 @@
 
 This repository contains a complete end-to-end machine learning project focused on detecting fraudulent credit card transactions. The project was originally developed and tested on Kaggle, and has been adapted for GitHub with dataset integration via Google Drive due to size limitations.
 
+---
+
 ### A. Objective
 The objective of this notebook is to build and evaluate a classification model to detect fraudulent credit card transactions from a highly imbalanced dataset. The final goal is to optimize the recall and precision metrics for fraud detection using various techniques like SMOTE for balancing the TRAIN SET and Optuna for hyperparameter tuning.
+
+---
 
 ### B. Dataset Information
 - The dataset contains credit card transactions from European cardholders in September 2013.
@@ -11,6 +15,8 @@ The objective of this notebook is to build and evaluate a classification model t
 - Class `1` represents fraud, Class `0` represents legitimate transactions.
 - Due to GitHub's file size limit (> 100 MB), the dataset is imported from my personal Google Drive using `gdown`.
 - The link to the original dataset on Kaggle is `https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud`.
+
+---
 
 ### C. Dataset Access (Google Drive)
 - To load the dataset, the following code is used:
@@ -28,6 +34,8 @@ download_url = f'https://drive.google.com/uc?id={file_id}'
 output = 'creditcard.csv'
 
 gdown.download(download_url, output, quiet=False)
+
+---
 
 ### D. Project Workflow
 1. Importing required libraries.
@@ -91,9 +99,13 @@ c. ROC-AUC and PR-AUC.
 
 The final model achieved strong performance and balanced metrics, especially in identifying fraudulent transactions from a heavily imbalanced dataset. Optuna improved the model's ability to detect fraud while minimizing false positives.
 
+---
+
 ### E. Environment
 
 This notebook was developed and tested on **Kaggle Notebook**, for environments where dependencies are not pre-installed, use the optional `!pip install` commands mentioned on point D.
+
+---
 
 ## AUTHOR
 
